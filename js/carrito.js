@@ -7,9 +7,11 @@ const renderizarCarrito = () => {
 
     const contenedor = document.getElementById("contenedor-carrito");
     const divAcciones = document.getElementById("acciones-carrito");
+    const divResumen = document.getElementById("resumen-carrito");
 
     contenedor.innerHTML = "";
     divAcciones.innerHTML = "";
+    divResumen.innerHTML = "";
 
     // Si no hay productos, muestro un mensaje y corto la función acá.
     if (!carrito.length) {
@@ -20,9 +22,6 @@ const renderizarCarrito = () => {
         return;
     }
 
-    // Recorro el carrito y armo una tarjeta por cada producto.
-    // Uso el parámetro opcional "index" del forEach para saber qué posición
-    // eliminar cuando se haga click en el botón de cada tarjeta.
     carrito.forEach((producto, index) => {
 
         const tarjeta = document.createElement("article");
@@ -44,7 +43,7 @@ const renderizarCarrito = () => {
 
         btnEliminar.addEventListener("click", () => {
             eliminarProducto(index);
-            renderizarCarrito(); // vuelvo a pintar todo con la info actualizada
+            renderizarCarrito();
         });
 
         tarjeta.appendChild(imagen);
@@ -66,6 +65,17 @@ const renderizarCarrito = () => {
     });
 
     divAcciones.appendChild(btnVaciar);
+
+    // Calculo el total a pagar sumando el precio de cada producto del carrito.
+    // reduce recorre el array y va acumulando un valor: empieza en 0 (el acumulador)
+    // y en cada vuelta le suma el precio del producto actual.
+    const total = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+
+    const parrafoTotal = document.createElement("p");
+    parrafoTotal.classList.add("total-carrito");
+    parrafoTotal.textContent = `Total a pagar: $${total}`;
+
+    divResumen.appendChild(parrafoTotal);
 };
 
 document.addEventListener("DOMContentLoaded", () => {

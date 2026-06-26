@@ -276,3 +276,13 @@ textarea {
     margin-top: 2rem;
     text-align: center;
 }
+
+#resumen-carrito {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.total-carrito {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
