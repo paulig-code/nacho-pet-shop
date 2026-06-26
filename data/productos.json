@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Cucha Premium",
+    "descripcion": "Cucha acolchada de tela tusor, cómoda y duradera.",
+    "precio": 45000,
+    "img": "img/cucha.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Sweater Floral",
+    "descripcion": "Sweater de punto con estampado floral, abrigado y moderno.",
+    "precio": 18000,
+    "img": "img/sweater2.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Sweater Cuadrillé",
+    "descripcion": "Sweater tejido en cuadrillé verde y beige, estilo clásico.",
+    "precio": 18000,
+    "img": "img/sweater1.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Bebedero Elevado",
+    "descripcion": "Bebedero de acero inoxidable con base elevada, ideal para la postura.",
+    "precio": 22000,
+    "img": "img/bebedero.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Set de Platos",
+    "descripcion": "Set de tres platos antideslizantes de comedero lento, estimulación mental.",
+    "precio": 15000,
+    "img": "img/platos.png"
+  },
+  {
+    "id": 6,
+    "nombre": "Set de Paseo (Correa + Pretal)",
+    "descripcion": "Set de correa y pretal resistente con diseño moderno, perfecta para el paseo diario.",
+    "precio": 32000,
+    "img": "img/correa.png"
+  }
+]

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Nacho Pet Shop</title>
+    <title>Carrito - Nacho Pet Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700;800&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
@@ -27,28 +27,16 @@
     </header>
  
     <main>
-        <h1 class="titulo-contacto text-secondary">Contactanos</h1>
+        <h1 class="titulo-carrito text-secondary">Carrito de compras</h1>
  
-        <form class="form-contacto" action="https://formspree.io/f/xjglpdbr" method="POST">
+        <section id="contenedor-carrito" class="contenedor-tarjetas">
+        </section>
  
-            <div class="grupo-input">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
-            </div>
+        <div id="acciones-carrito">
+        </div>
  
-            <div class="grupo-input">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="tucorreo@mail.com">
-            </div>
- 
-            <div class="grupo-input">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta acá"></textarea>
-            </div>
- 
-            <button type="submit" class="btn bg-secondary text-dark">Enviar</button>
- 
-        </form>
+        <section id="resumen-carrito">
+        </section>
     </main>
  
     <footer>
@@ -63,7 +51,7 @@
         <p>© 2026 Nacho Pet Shop</p>
     </footer>
  
-    <script type="module" src="../js/contacto.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
  
 </body>
 </html>

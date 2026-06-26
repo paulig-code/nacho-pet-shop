@@ -271,3 +271,8 @@ textarea {
         margin: 0;
     }
 }
+
+#acciones-carrito {
+    margin-top: 2rem;
+    text-align: center;
+}
