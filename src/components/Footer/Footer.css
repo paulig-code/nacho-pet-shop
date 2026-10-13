@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--accent);
+  color: var(--bg);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+.footer-sub {
+  opacity: 0.8;
+  font-size: 0.85rem;
+}
