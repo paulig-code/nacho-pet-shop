@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { getProductById } from "../../data/productos"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
 
 export const ItemDetailContainer = () => {
@@ -11,8 +10,12 @@ export const ItemDetailContainer = () => {
   useEffect(() => {
     setItemDetail(null)
     setLoading(true)
-    setItemDetail(getProductById(id))
-    setLoading(false)
+    fetch("/data/products.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setItemDetail(data.find((p) => p.id === parseInt(id)))
+        setLoading(false)
+      })
   }, [id])
 
   if (loading) return <p>Cargando...</p>
@@ -20,7 +23,7 @@ export const ItemDetailContainer = () => {
 
   return (
     <section>
-      <h1>Detalle del producto</h1>
+      <h1>Detalles del producto</h1>
       <div className="products-container">
         <ItemDetail item={itemDetail} />
       </div>

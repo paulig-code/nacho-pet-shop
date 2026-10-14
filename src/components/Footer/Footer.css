@@ -1,17 +1,39 @@
-.footer {
-  background-color: var(--accent);
-  color: var(--bg);
-  text-align: center;
-  padding: 1.5rem 2rem;
-  margin-top: auto;
+footer {
+  margin-top: 4rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer p {
-  margin: 0.25rem 0;
-  font-size: 0.95rem;
+footer p {
+  color: var(--text-secondary);
 }
 
-.footer-sub {
-  opacity: 0.8;
-  font-size: 0.85rem;
+footer .nav-list {
+  gap: 1.5rem;
+}
+
+footer li {
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+footer li:hover {
+  color: var(--primary);
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

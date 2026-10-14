@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Croquetas Premium",
+    "description": "Alimento balanceado para perros adultos.",
+    "price": 500,
+    "image": "/img/croquetas.png",
+    "category": "alimento"
+  },
+  {
+    "id": 2,
+    "name": "Huesos de cuero",
+    "description": "Snack natural para mantener los dientes limpios.",
+    "price": 150,
+    "image": "/img/huesos.png",
+    "category": "snack"
+  },
+  {
+    "id": 3,
+    "name": "Pelota de goma",
+    "description": "Pelota resistente ideal para jugar en el parque.",
+    "price": 200,
+    "image": "/img/pelota.png",
+    "category": "juguete"
+  },
+  {
+    "id": 4,
+    "name": "Collar ajustable",
+    "description": "Collar de nylon resistente con hebilla de seguridad.",
+    "price": 350,
+    "image": "/img/collar.png",
+    "category": "accesorio"
+  },
+  {
+    "id": 5,
+    "name": "Cama para mascotas",
+    "description": "Cama acolchada ultra cómoda para el descanso.",
+    "price": 900,
+    "image": "/img/cama.png",
+    "category": "accesorio"
+  },
+  {
+    "id": 6,
+    "name": "Shampoo antipulgas",
+    "description": "Shampoo natural con extracto de neem.",
+    "price": 280,
+    "image": "/img/shampoo.png",
+    "category": "higiene"
+  }
+]
