@@ -1,6 +1,6 @@
 footer {
   margin-top: 4rem;
-  background: var(--surface);
+  background: var(--accent);
   border-top: 1px solid var(--border);
   padding: 1.5rem 3rem;
   display: flex;
@@ -8,32 +8,9 @@ footer {
   align-items: center;
 }
 
-footer p {
-  color: var(--text-secondary);
-}
-
-footer .nav-list {
-  gap: 1.5rem;
-}
-
-footer li {
-  transition: 0.25s;
-  cursor: pointer;
-}
-
-footer li:hover {
-  color: var(--primary);
-}
-
-.footer-icon {
-  width: 32px;
-  height: 32px;
-  display: block;
-}
-
-.nav-list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+footer p { color: #fff; }
+footer .nav-list { gap: 1.5rem; }
+footer li { transition: 0.25s; cursor: pointer; }
+footer li:hover { opacity: 0.7; }
+.footer-icon { width: 32px; height: 32px; display: block; }
+.nav-list { display: flex; list-style: none; padding: 0; margin: 0; }
